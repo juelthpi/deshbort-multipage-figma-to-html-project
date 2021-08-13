@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="assets/images/logo.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<title>Deshboard-design</title>
+	<!-- fonts area -->
+	<link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+	<!-- Style css link -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+
+	<div class="login_main_page_area">
+		<div class="container-fluid">
+			<div class="register_page">
+				<!-- Register Logo Area -->
+				
+				<div class="row">
+					<div class="col-md-12">
+						<div class="login_main_form_area">
+							<div class="register_logo">
+								<a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+							</div>
+							<div class="lo_container">
+								<div class="login_header_area">
+									
+									<div class="login_area">
+										<div class="login_card_area">
+											<div class="login_header_text_area">
+												<h1>  Forgot Password </h1>
+												<p>Please select option to send link reset password</p>
+											</div>
+											<div class="login_main_form_area">
+												<form action="" method="POST">
+													<div class="row custom_checkbox_area">
+														<div class="col-md-12 ">
+															<div class="list">
+																<div class="login-email-select-option">
+																	<label for="inputelement" tabindex="1" class="click1" class="form-control">
+																		<div class="login-icon">
+																			<img src="assets/images/register/email.png" alt="email-icon">
+																		</div>
+																		<div class="login_text_area" >
+																			<h6>Reset via Email</h6>
+																			<p>Link reset will be sent to the email address you registered with</p>
+																		</div>
+																		<input type="radio" id="inputelement" name="f-email" value="f-email">
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="list">
+																<div class="login-email-select-option">
+																	<label tabindex="1" for="inputelement2">
+																		
+																		<div class="login-icon">
+																			<img src="assets/images/register/number.png" alt="email-icon">
+																		</div>
+																		<div class="login_text_area">
+																			<h6>Reset via Email</h6>
+																			<p>Link reset will be sent to the email address you registered with</p>
+																		</div>
+																		<input type="radio" id="inputelement2" name="f-email" value="f-email">
+																	</label>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="login_btn_area">
+																<input type="submit" value="Send Link">
+																<p>Didn’t receive link? <a href="#"> Resend</a></p>
+															</div>
+														</div>
+													</div>
+												</form>
+												
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Optional JavaScript -->
+	<!-- Popper.js first, then Bootstrap JS -->
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/Chart.min.js"></script>
+	<script src="assets/js/line.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/progresscircle.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="assets/js/color.js"></script>
+	<script src="assets/js/Modernizr.js"></script>
+	<script src="assets/js/script.js"></script>
+
+	<script>
+		// let labels= document.querySelector(".login-email-select-option-top"); 
+		// labels.onclick = function(){
+		// 	labels.classList.toggle('active');
+		// }
+		 // $('.abcd').click(function(){
+		 //    $('.click1').addClass("active");
+		 // });
+
+		 let list = document.querySelectorAll('.list');
+		for(let i=0; i<list.length; i++){
+			list[i].onclick = function(){
+				let j = 0;
+				while(j<list.length){
+					list[j++].className = 'list';
+				}
+				list[i].className = 'list active';
+			}
+		}
+	</script>
+
+</body>
+</html>
